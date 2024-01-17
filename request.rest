@@ -1,0 +1,96 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/65a6cc1a7304e9060eb49fcd
+
+###
+DELETE http://localhost:3000/api/services/65a6cc1a7304e9060eb49fcd
+
+###
+PUT http://localhost:3000/api/services/65a6cc1a7304e9060eb49fcd
+Content-Type: application/json
+
+{
+   "name": "Outro serviço",
+    "description": "Outra descrição",
+    "price": 1600,
+    "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png" 
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "André",
+    "description": "Uma festa de aniversário",
+    "budget": 3000,
+    "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/65a7fecdd1b87ed741cc60d5
+
+###
+DELETE http://localhost:3000/api/parties/65a7fecdd1b87ed741cc60d5
+
+###
+PUT http://localhost:3000/api/parties/65a7ffa6d1b87ed741cc60db
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "André",
+    "description": "Uma festa de aniversário",
+    "budget": 10000,
+    "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 3000,
+            "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+        },
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://love.doghero.com.br/wp-content/uploads/2018/12/golden-retriever-1.png"
+        }
+    ]
+}
